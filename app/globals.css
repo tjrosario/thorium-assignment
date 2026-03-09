@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    background-image: url("/images/ellipsis.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    @apply bg-navy-800 text-white antialiased;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent-cyan;
+  }
+}
+
+@layer components {
+  .hero-text-gradient {
+    font-weight: 400;
+    text-transform: uppercase;
+
+    /* THE HOLLOW LOOK: 
+       We use a semi-transparent white stroke. 
+       'color: transparent' ensures the background elements (bars) show through. */
+    -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.4);
+    color: transparent;
+
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    /* Figma-specific letter spacing */
+    letter-spacing: -0.05em;
+  }
+}

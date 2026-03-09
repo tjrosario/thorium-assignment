@@ -1,0 +1,19 @@
+# Build outputs
+.next/
+dist/
+build/
+out/
+
+# Dependencies
+node_modules/
+
+# Static assets and logs
+public/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Configs that don't need formatting
+package-lock.json
+yarn.lock
