@@ -1,4 +1,4 @@
-# MagnaCare Access — Landing Page
+# MagnaCare Access: Landing Page
 
 Production-quality Next.js implementation of the MagnaCare Access landing page.
 
