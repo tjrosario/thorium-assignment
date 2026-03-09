@@ -31,9 +31,9 @@ export const CTAForm: FC<CTAFormProps> = ({ className, ...props }) => {
 
   return (
     <section className={`relative pb-12 pt-4 lg:py-32 ${className || ""}`} {...props}>
-      <Container narrow>
+      <Container narrow className="">
         {/* Decorative Plus */}
-        <div aria-hidden="true" className="absolute left-[10%] top-10 hidden opacity-20 lg:block">
+        <div aria-hidden="true" className="absolute left-[140px] top-[45px] hidden opacity-20 lg:block">
           <PlusCross className="h-24 w-24" />
         </div>
 

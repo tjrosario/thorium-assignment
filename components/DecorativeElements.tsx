@@ -55,8 +55,10 @@ export const PlusCross: FC<PlusCrossProps> = ({ className = "", ...props }) => {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <line stroke="rgba(79,195,247,0.2)" strokeWidth="1" x1="26" x2="26" y1="0" y2="52" />
-      <line stroke="rgba(79,195,247,0.2)" strokeWidth="1" x1="0" x2="52" y1="26" y2="26" />
+      {/* Vertical Line */}
+      <line x1="26" y1="0" x2="26" y2="52" stroke="#54C9FF" strokeWidth="3" />
+      {/* Horizontal Line */}
+      <line x1="0" y1="26" x2="52" y2="26" stroke="#54C9FF" strokeWidth="3" />
     </svg>
   );
 };
