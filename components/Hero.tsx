@@ -52,6 +52,7 @@ export const Hero: FC<HeroProps> = ({ className, ...props }) => {
             alt="Doctor with tablet"
             height={391}
             src="/images/hero-doctor-tablet.jpg"
+            style={{ height: "auto" }}
             width={332}
           />
         </div>
@@ -60,6 +61,7 @@ export const Hero: FC<HeroProps> = ({ className, ...props }) => {
             alt="Doctor with child"
             height={508}
             src="/images/hero-doctor-child.jpg"
+            style={{ height: "auto" }}
             width={369}
           />
         </div>
